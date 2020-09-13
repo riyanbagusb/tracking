@@ -1,0 +1,101 @@
+@import '~datatables.net-dt/css/jquery.dataTables.css';
+
+.dataTables_wrapper {
+	overflow-x: auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.dataTables_wrapper select, .dataTables_wrapper .dataTables_filter input {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	line-height: 1.25;
+	border-width: 1px;
+	border-radius: .25rem;
+}
+
+.dataTables_wrapper select, .dataTables_wrapper .dataTables_filter input {
+	outline: none;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	margin-left: .5em;
+	margin-left: .5em;
+	font-weight: 700;
+	border-radius: .25rem;
+	border: 1px solid transparent;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+	border: 1px solid transparent;
+	color: #FFC107 !important;
+	background: #fff !important;
+	
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+	color: #fff !important;
+	font-weight: 700;
+	border-radius: .25rem;
+	background: #002060 !important;
+	border: 1px solid transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+	color: #FFC107 !important;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+	border: 1px solid transparent;
+}
+
+table.dataTable {
+	overflow-x: auto;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+	border-bottom: 1px solid #e2e8f0;
+}
+
+table.dataTable.no-footer {
+	border-bottom: 1px solid #e2e8f0;
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+}
+
+table.dataTable thead th {
+	position: relative;
+	background-image: none !important;
+}
+table.dataTable thead th:focus {
+	outline: none;
+}
+table.dataTable thead th.sorting:after,
+table.dataTable thead th.sorting_asc:after,
+table.dataTable thead th.sorting_desc:after {
+	position: absolute !important;
+	top: 12px !important;
+	right: 8px !important;
+	display: block !important;
+}
+table.dataTable thead th.sorting:after {
+	content: "\2191";
+	color: #ddd !important;
+	font-size: 0.8em !important;
+	padding-top: 0.12em !important;
+}
+table.dataTable thead th.sorting_asc:after {
+	content: "\2191";
+}
+table.dataTable thead th.sorting_desc:after {
+	content: "\2193";
+}
+
+table.dataTable tbody tr.odd {
+	background-color: #f4f5f7;
+}
+
+table.dataTable tbody tr:hover {
+	background-color: #e2e8f0;
+}

@@ -1,0 +1,1 @@
+<img src="{{ asset('images/logo/logo-72x72.png') }}" alt="Ayleen Afindo">
