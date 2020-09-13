@@ -43,10 +43,10 @@
                                 <x-jet-nav-link href="{{ url('dashboard') }}" :active="request()->routeIs('dashboard')">
                                     {{ __('Dashboard') }}
                                 </x-jet-nav-link>
-                                <x-jet-nav-link href="{{ url('customers') }}" :active="request()->routeIs(['customers.index', 'customers.show'])">
+                                <x-jet-nav-link href="{{ url('customers') }}" :active="request()->routeIs(['customers.*'])">
                                     {{ __('Customers') }}
                                 </x-jet-nav-link>
-                                <x-jet-nav-link href="{{ url('airway_bills') }}" :active="request()->routeIs(['airway_bills.index', 'airway_bills.show'])">
+                                <x-jet-nav-link href="{{ url('airway_bills') }}" :active="request()->routeIs(['airway_bills.*', 'tracking_statuses.*'])">
                                     {{ __('Airway Bills') }}
                                 </x-jet-nav-link>
                             </div>
